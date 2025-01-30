@@ -1,0 +1,115 @@
+body {
+    font-family: 'Lucida Grande', helvetica, arial, verdana, sans-serif;
+    background-color: #40640c;
+    background-image: url("dark_green_1.jpg");
+    --wiersze: 6;
+    --kolumny: 9;
+    --tile-size: 120px;
+    justify-items: center;
+}
+
+header {
+    margin-bottom: 25px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+header > * {
+    vertical-align: middle;
+}
+
+#odstep {
+    margin-left: 150px;
+}
+
+#gracz1 {
+    color: #ff6060;
+    border: 5px none #ff6060;
+    padding: 10px 10px 10px 10px;
+}
+
+#wynik1, #wynik2 {
+    font-size: xx-large;
+    color: beige;
+    width: 80px;
+    height: 40px;
+    margin: 0px 15px 0px 15px;
+}
+
+#gracz2 {
+    color: yellow;
+    border: 5px none yellow;
+    padding: 10px 10px 10px 10px;
+}
+
+#gra {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(var(--kolumny), var(--tile-size));
+    grid-template-rows: repeat(var(--wiersze), var(--tile-size));
+    gap: 10px;
+}
+
+#gra > img {
+    width: var(--tile-size);
+    height: var(--tile-size);
+}
+
+.modal-window {
+    font-size: xx-large;
+    font-weight: bold;
+    align-self: center;
+    justify-self: center;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.button-ok {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 20%;
+    background-color: greenyellow;
+    color: darkgreen;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    transition: background-color 0.5s ease;
+}
+
+.button-ok:hover {
+    cursor: pointer;
+    background-color: limegreen;
+}
+
+#ekran-powitalny {
+    margin-top: 60px;
+}
+
+.formularz {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    gap: 100px;
+}
+
+.formularz > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.formularz img {
+    vertical-align: text-top;
+}
