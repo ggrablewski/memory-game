@@ -10,7 +10,6 @@ const start = new Audio("start.mp3");
 const uncover = new Audio("bounce_1.mp3");
 const wrong = new Audio("bounce_2.mp3");
 const correct = new Audio("dog.mp3");
-const zmiana = new Audio("lamb.mp3");
 const brawo = new Audio("cheers.mp3");
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -38,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function ekranPowitalny() {
     gra.replaceChildren([]);  // Wyczyść stół do gry
     formularz.hidden = false;
+    formularz.style.display = "flex";
     player1.value = gracz[1].innerHTML; // wybory domyślne
     player2.value = gracz[2].innerHTML;
     rozmiar[1].checked = true;
@@ -65,6 +65,7 @@ function ustawGre() {
  */
 function uruchomGre(rozmiarPlanszyX, rozmiarPlanszyY) {
     formularz.hidden = true;
+    formularz.style.display = "none";
     start.play();
     body.style.setProperty("--wiersze", rozmiarPlanszyY.toString());
     body.style.setProperty("--kolumny", rozmiarPlanszyX.toString());
@@ -256,7 +257,6 @@ function zmienKolej() {
         gra.removeChild(nowyGracz);
         ustawGracza();
     }, 1000);
-    zmiana.play();
 }
 
 /**

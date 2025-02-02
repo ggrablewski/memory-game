@@ -50,6 +50,8 @@ header > * {
     grid-template-columns: repeat(var(--kolumny), var(--tile-size));
     grid-template-rows: repeat(var(--wiersze), var(--tile-size));
     gap: 10px;
+    width: max-content;
+    margin: 0 auto;
 }
 
 #gra > img {
@@ -93,6 +95,9 @@ header > * {
 
 #ekran-powitalny {
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .formularz {
