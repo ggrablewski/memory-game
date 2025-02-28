@@ -8,9 +8,26 @@ body {
     justify-items: center;
 }
 
-@media (min-height: 700px) {
+@media (min-device-height: 701px) {
     body {
         --tile-size: 120px;
+    }
+    .formularz {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: white;
+        gap: 100px;
+    }
+}
+
+@media (max-device-height: 700px) or (orientation: portrait) {
+    .formularz {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: white;
+        gap: 30px;
     }
 }
 
@@ -104,14 +121,6 @@ header > * {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.formularz {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: white;
-    gap: 100px;
 }
 
 .formularz > div {
