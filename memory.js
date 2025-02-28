@@ -1,7 +1,7 @@
 const OKLADKA_BLUE = `cover_blue.png`;
 const OKLADKA_RED = `cover_red.png`;
 const ROZMIARY = [[4, 3], [6, 5], [9, 6], [10, 8]];
-const KOMPUTER_NAME_LIST = ["RZUF", "Fred", "Bolec", "Cwaniak", "Gigantus", "Pułkownik z UB", "Brutus", "Cezar", "Reżyser kina akcji", "Waldek"];
+const KOMPUTER_NAME_LIST = ["RZUF", "Fred", "Bolec", "Cwaniak", "Gigantus", "Pułkownik UB", "Brutus", "Cezar", "Reżyser kina akcji", "Waldek"];
 const KOMPUTER_FILM_LIST = [["rzuf.mp4"], ["fred.mp4"], ["bolec.mp4"], ["cwaniak.mp4"], ["gigantus.mp4"], ["pulkownik.mp4"], ["brutus.mp4"], ["cezar.mp4"], ["rezyser1.mp4", "rezyser2.mp4"], ["waldek.mp4"]];
 let karty = [], poprzednia = [], wzory = [], pamiec = [];             // tablice z liczbami
 let body, formularz, gra, wynik = [], gracz = [], startButton, endButton;           // elementy html
