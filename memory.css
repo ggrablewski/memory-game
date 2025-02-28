@@ -8,7 +8,7 @@ body {
     justify-items: center;
 }
 
-@media screen {
+@media (min-height: 700px) {
     body {
         --tile-size: 120px;
     }
