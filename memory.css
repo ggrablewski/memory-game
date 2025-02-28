@@ -4,8 +4,14 @@ body {
     background-image: url("dark_green_1.jpg");
     --wiersze: 6;
     --kolumny: 9;
-    --tile-size: 120px;
+    --tile-size: 60px;
     justify-items: center;
+}
+
+@media screen {
+    body {
+        --tile-size: 120px;
+    }
 }
 
 header {
