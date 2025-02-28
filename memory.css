@@ -128,7 +128,14 @@ header > * {
     flex-direction: column;
     gap: 20px;
     margin-bottom: 100px;
+}
+
+.formularz * {
     color: white;
+}
+
+.formularz input {
+    color: black;
 }
 
 .formularz img {
